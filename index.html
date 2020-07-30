@@ -8,22 +8,38 @@
 		<div class="visible-text">
 			<h3 class="heading">Popover Example</h3>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever  since the 1500s, book.  </p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard <a href="#" id="link" onclick="popOver()">specimen</a>dummy text ever since the 1500s,</p>
+			<p>Lorem Ipsum  is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-			<p>Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<a class="link" href="#" onclick="popOver()">specimen</a></p>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 		</div>
 		<div class="pop-container" id="popover">
-			<div class="pop-child">an individual animal, plant, piece of a mineral, etc. used as an example of its species or type for scientific study or display.</div>
+			<div class="pop-child ">an individual animal, plant, piece of a mineral, etc. used as an example of its species or type for scientific study or display.</div>
 		</div>
 	</div>
 	<script type="text/javascript">
 		let click = 1;
+		
+
+		function offset(el) {
+		    var rect = el.getBoundingClientRect(),
+    		scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+    		scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+		}
+		var id = document.getElementById("link")
+		var result = offset(id);
+
+		
+
+
 		function popOver(){
 			
 			if(click % 2 != 0){
 				document.getElementById("popover").style.transform="scale(1)";
+				document.getElementById("popover").style.left=result.left+"px";
+				document.getElementById("popover").style.top=result.top+20 +"px";
 				click++;
 			}
 			else{
@@ -31,7 +47,7 @@
 				click++;
 
 			}
-	}
+		}
 	
 	</script>
 </body>

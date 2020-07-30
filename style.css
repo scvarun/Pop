@@ -6,36 +6,32 @@
 	width:100%;
 	height: auto;
 }
-.link{
+.visible-text{
 	position: relative;
 }
 
-
 .pop-container{
+	
+	max-width: 500px;
+	height:auto;
 	position: absolute;
 	transform: scale(0);
-	background-color: black;
 	color: black;
 	border-radius: 10px;
 	
 }
 .pop-child{
-	position: absolute;
+	
 	max-width: 500px;
 	padding:10px;
 	background-color: #ffe6e6;
 	color: black;
 	border-radius: 10px;
-		
-
 }
 
 
 .pop-container.bottom{
 	
-	position: absolute;
-	top: 220px;
-	right: 340px;
-	bottom:200px;
-	left: 220px;
+	bottom: 350px;
+	
 }
