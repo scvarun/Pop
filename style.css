@@ -4,51 +4,38 @@
 .container{
 	
 	width:100%;
-	
 	height: auto;
 }
-.visible-text{
+.link{
 	position: relative;
 }
 
 
-.row{
+.pop-container{
 	position: absolute;
-	display: flex;
-	flex-direction: column;
 	transform: scale(0);
+	background-color: black;
+	color: black;
+	border-radius: 10px;
+	
+}
+.pop-child{
+	position: absolute;
+	max-width: 500px;
+	padding:10px;
 	background-color: #ffe6e6;
 	color: black;
-	
 	border-radius: 10px;
-	border:1px solid black;
-	
-	
-}
-.col{
-	
-	
-	flex:0;
-	padding:10px;
-	
-}
-.right{
-	position: absolute;
-	width: auto%;
-	top: 60px;
-	left:350px;
-	
+		
 
 }
-.bottom{
+
+
+.pop-container.bottom{
+	
 	position: absolute;
-	width: auto;
-	bottom: 520px;
-	left:10px;
-}
-.top{
-	position: absolute;
-	width: auto;
-	bottom: 590px;
-	left:20px;
+	top: 220px;
+	right: 340px;
+	bottom:200px;
+	left: 220px;
 }
