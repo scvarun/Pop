@@ -1,35 +1,54 @@
-.container{
-	position: relative;
-	width:100%;
+*{
+	box-sizing: border-box;
 }
+.container{
+	
+	width:100%;
+	
+	height: auto;
+}
+.visible-text{
+	position: relative;
+}
+
+
 .row{
+	position: absolute;
 	display: flex;
 	flex-direction: column;
 	transform: scale(0);
-
+	background-color: #ffe6e6;
+	color: black;
+	
+	border-radius: 10px;
+	border:1px solid black;
+	
+	
 }
 .col{
-	box-sizing: border-box;
+	
+	
 	flex:0;
-	border: 1px solid #ccc;
 	padding:10px;
+	
 }
 .right{
-	position:absolute;
+	position: absolute;
 	width: auto%;
 	top: 60px;
 	left:350px;
-
+	
 
 }
 .bottom{
-	position:absolute;
+	position: absolute;
 	width: auto;
-	bottom: 0px
-	left:10px;	
+	bottom: 520px;
+	left:10px;
 }
-
-.link{
-	text-decoration: none;
-	margin:20px;
+.top{
+	position: absolute;
+	width: auto;
+	bottom: 590px;
+	left:20px;
 }
