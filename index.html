@@ -10,9 +10,9 @@
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever  since the 1500s, book.  </p>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard <a href="#" class="1" id="link1" onclick="popOver(this)"> specimen</a>dummy text ever since the 1500s,</p>
 			<p>Lorem Ipsum  is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-			<p>Lorem<a href="#" class="2" id="link2" onclick="popOver(this)"> specimen</a> Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+			<p>Lorem<a href="#" class="1" id="link2" onclick="popOver(this)"> specimen</a> Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting<a href="#" class="3" id="link3" onclick="popOver(this)"> specimen</a> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting<a href="#" class="1" id="link3" onclick="popOver(this)"> specimen</a> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 		</div>
 		<div class="pop-container" id="popover">
 			<div class="pop-child ">an individual animal, plant, piece of a mineral, etc. used as an example of its species or type for scientific study or display.</div>
@@ -23,7 +23,9 @@
 		
 
 		function popOver(obj){
-			//console.log(obj.id)
+			var m = document.getElementsByClassName("1");
+			console.log(m);
+			console.log(options);
 			function offset(el) {
 		    var rect = el.getBoundingClientRect(),
     		scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
