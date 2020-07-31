@@ -35,3 +35,36 @@
 	bottom: 350px;
 	
 }
+
+.popover {
+	background: #fff;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+	border-radius: 10px;
+	overflow: hidden;
+	transform: translateY(-100%) translateX(-45%);
+	z-index: 999;
+}
+
+.popover h6 {
+	margin: 0;
+	background: #ddd;
+	padding: 1rem;
+	font-size: 1em;
+}
+
+.popover p {
+	padding: 1rem;
+	margin: 0;
+}
+
+.popover--left {
+	transform: translateY(-50%) translateX(-105%);
+}
+
+.popover--right {
+	transform: translateY(-50%);
+}
+
+.popover--bottom {
+	transform: translateX(-45%);
+}
