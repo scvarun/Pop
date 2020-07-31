@@ -65,7 +65,7 @@
 					for(var i = 0; i < popovers.length; i++) {
 						var popover = popovers[i];
 						popover.addEventListener('click', function(e) {
-							e.prenventDefault();
+							e.preventDefault();
 							var popover = this;
 							var elPosition = offset(this);
 							var title = popover.dataset.title;
