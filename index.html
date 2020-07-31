@@ -64,7 +64,8 @@
 					document.body.style.position = 'relative';
 					for(var i = 0; i < popovers.length; i++) {
 						var popover = popovers[i];
-						popover.addEventListener('click', function() {
+						popover.addEventListener('click', function(e) {
+							e.prenventDefault();
 							var popover = this;
 							var elPosition = offset(this);
 							var title = popover.dataset.title;
